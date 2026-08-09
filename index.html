@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Design</title>
+    <meta name="description" content="A premium tabbed portfolio experience">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+
+<body>
+    <div class="loader"></div>
+
+    <aside class="sidebar">
+        <div class="logo">
+            <h2>A.</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link active" data-target="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-target="about">About</a></li>
+                <li><a href="#" class="nav-link" data-target="work">Work</a></li>
+                <li><a href="#" class="nav-link" data-target="contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/abhinav-prajapat-770253369" target="_blank"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/http__abhinavvv/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </aside>
+
+    <main id="main-container">
+        <!-- HOME SECTION -->
+        <section class="view-section active" id="home">
+            <div class="hero-layout">
+                <div class="hero-text-col">
+                    <p class="hero-greeting">Hello, I am</p>
+                    <h1 class="hero-title">Abhinav.</h1>
+                    <p class="hero-subtitle">I'm a Creative Developer who designs and codes beautifully simple things.
+                    </p>
+                    <a href="#" class="primary-btn">Hire Me</a>
+                </div>
+                <div class="hero-image-col">
+                    <img src="./portrait_16x9.jpg" alt="Portrait" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="view-section" id="about">
+            <div class="content-wrapper about-section">
+                <h2 class="section-heading">About Me</h2>
+                <div class="about-content">
+                    <p>I was born in Rohtak on July 19, 2006, and I am currently a 20-year-old, second-year B.Tech
+                        student at IILM Gurugram. As a passionate developer focusing on interactive web experiences with
+                        a strong background in both design and development, I love bridging the gap between aesthetics
+                        and functionality.</p>
+
+                    <div class="experience-block" style="margin-top: 40px;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: #fff;">Experience</h3>
+                        <div class="experience-item"
+                            style="background: rgba(255, 255, 255, 0.03); padding: 25px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05);">
+                            <h4 style="font-size: 1.2rem; margin-bottom: 5px; color: #fff;">IT Intern</h4>
+                            <p style="font-weight: 600; color: #888; font-size: 0.9rem;">Sero India NGO • 6 Month
+                                Internship</p>
+                            <p style="margin-top: 15px; color: #aaa; line-height: 1.6;">Worked on improving and
+                                revamping the organization's website to increase user engagement and create a much
+                                better, modern visual experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORK SECTION -->
+        <section class="view-section" id="work">
+            <div class="content-wrapper work-section">
+                <h2 class="section-heading">Selected Projects</h2>
+                <div class="work-grid">
+                    <div class="project-card">
+                        <div class="project-image-placeholder"></div>
+                        <div class="project-info">
+                            <h3>Project Alpha</h3>
+                            <p>Web Design & Development</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image-placeholder"></div>
+                        <div class="project-info">
+                            <h3>Project Beta</h3>
+                            <p>Branding & UI/UX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="view-section" id="contact">
+            <div class="content-wrapper contact-section">
+                <h2 class="section-heading">Get In Touch</h2>
+                <p style="margin-bottom: 30px; color: #888;">Have a project in mind or just want to say hi? Feel free to
+                    reach out.</p>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="mailto:abhinav19abhinav@gmail.com" class="primary-btn">abhinav19abhinav@gmail.com</a>
+                    <a href="tel:8307611258" class="primary-btn">8307611258</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
