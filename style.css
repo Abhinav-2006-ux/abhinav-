@@ -439,12 +439,13 @@ nav a.active {
         flex: 1;
         min-height: 35vh;
         height: auto;
-        align-items: flex-end;
+        align-items: flex-start;
+        margin-top: 10px;
     }
     .hero-image {
-        transform: scale(1.2) translateY(5%);
+        transform: scale(1.15) translateY(0);
         max-height: 100%;
-        object-position: center bottom;
+        object-position: center top;
     }
     .hero-image-col::before {
         width: 250px;
