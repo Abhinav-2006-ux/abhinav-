@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function playAnimations(sectionId) {
         if(sectionId === 'home') playHomeAnimations();
         if(sectionId === 'work') playWorkAnimations();
-        if(sectionId === 'contact' || sectionId === 'about') playGenericAnimations(sectionId);
+        if(sectionId === 'contact' || sectionId === 'about' || sectionId === 'experience') playGenericAnimations(sectionId);
     }
 
     function resetAnimations(sectionId) {
@@ -75,15 +75,16 @@ document.addEventListener("DOMContentLoaded", () => {
             gsap.set('.section-heading', {opacity: 0, y: 20});
             gsap.set('.project-card', {opacity: 0, y: 30});
         }
-        if(sectionId === 'contact' || sectionId === 'about') {
+        if(sectionId === 'contact' || sectionId === 'about' || sectionId === 'experience') {
             gsap.set(`#${sectionId} .section-heading`, {opacity: 0, y: 20});
-            gsap.set(`#${sectionId} p, #${sectionId} .primary-btn`, {opacity: 0, y: 20});
+            gsap.set(`#${sectionId} p, #${sectionId} .primary-btn, #${sectionId} .experience-item`, {opacity: 0, y: 20});
         }
     }
 
     // Initialize states
     resetAnimations('home');
     resetAnimations('about');
+    resetAnimations('experience');
     resetAnimations('work');
     resetAnimations('contact');
 
@@ -104,6 +105,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function playGenericAnimations(id) {
         gsap.to(`#${id} .section-heading`, {opacity: 1, y: 0, duration: 0.6});
-        gsap.to([`#${id} p`, `#${id} .primary-btn`], {opacity: 1, y: 0, stagger: 0.1, duration: 0.6, delay: 0.2});
+        gsap.to([`#${id} p`, `#${id} .primary-btn`, `#${id} .experience-item`], {opacity: 1, y: 0, stagger: 0.1, duration: 0.6, delay: 0.2});
     }
 });
